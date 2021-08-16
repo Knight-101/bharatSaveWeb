@@ -1,7 +1,7 @@
 import firebase from "firebase";
 
 const config = {
-  apiKey: "AIzaSyAU4XtnqEDOU8o-UZZXPkz5_Rs4lESM1ko",
+  apiKey: process.env.REACT_APP_API_KEY,
   authDomain: "bharatsave-4c86e.firebaseapp.com",
   projectId: "bharatsave-4c86e",
   storageBucket: "bharatsave-4c86e.appspot.com",
