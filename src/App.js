@@ -4,6 +4,7 @@ import AuthRoute from "./AuthRoute";
 import Home from "./Home/Home";
 import Login from "./Login/Login";
 import Signup from "./Signup/Signup";
+import Text from "./test";
 // const fs = require("fs");
 
 // const file = fs.readFileSync("../test");
@@ -19,9 +20,7 @@ function App() {
           <Login />
         </Route>
         <Route path="/.well-known/acme-challenge/k-nB2lEyFNFOdRvAbfSAsAaRu4QiMMB5rwkDSfXgG58">
-          <p>
-            k-nB2lEyFNFOdRvAbfSAsAaRu4QiMMB5rwkDSfXgG58.que1Rpoum2rbib_LYPfEuYqYxPdm-tGHaTgtthWP_x8
-          </p>
+          <Text />
         </Route>
         <AuthRoute path="/home" component={Home} />
         {/* <Route path="/register">
