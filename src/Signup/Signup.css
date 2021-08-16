@@ -1,0 +1,40 @@
+.authContainer {
+  width: 450px;
+  background-color: white;
+  margin: auto;
+  margin-top: 30px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.authInput {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 80%;
+  padding: 15px 5px;
+  font-size: 15px;
+}
+.authBtn {
+  width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 10px 5px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #363739;
+  color: #ffd700;
+}
+#recaptcha {
+  margin-top: 10px;
+  padding-left: 4rem;
+}
+
+@media (max-width: 500px) {
+  .authContainer {
+    width: 330px;
+  }
+  #recaptcha {
+    padding-left: 1rem;
+  }
+}
