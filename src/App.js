@@ -18,9 +18,9 @@ function App() {
         <Route exact path="/">
           <Login />
         </Route>
-        <Route path="/.well-known/acme-challenge/waX45KNreAxDZvdqVwbxytSwlSAX2lvloN05TDPDs0U">
+        <Route path="/.well-known/acme-challenge/6fHZXq3unjQfmHxdEFwPuR2iUwzOEItHdqxSlLyPBf0">
           <p>
-            waX45KNreAxDZvdqVwbxytSwlSAX2lvloN05TDPDs0U.que1Rpoum2rbib_LYPfEuYqYxPdm-tGHaTgtthWP_x8
+            6fHZXq3unjQfmHxdEFwPuR2iUwzOEItHdqxSlLyPBf0.que1Rpoum2rbib_LYPfEuYqYxPdm-tGHaTgtthWP_x8
           </p>
         </Route>
         <AuthRoute path="/home" component={Home} />
