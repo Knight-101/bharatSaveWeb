@@ -28,7 +28,7 @@ export default function Home() {
   const balanceDetails = () => {
     const token = localStorage.getItem("token");
     axios
-      .get(`${process.env.REACT_APP_BACKEND_URL}/augmont/balance`, {
+      .get(`${process.env.REACT_APP_BACKEND_URL}/user/balance`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
