@@ -74,9 +74,8 @@ export default function Login() {
       })
       .catch(function (error) {
         console.error(error);
-        if (error.code === "auth/invalid-verification-code") {
-          setfail("Invalid OTP");
-        }
+
+        setfail("Invalid OTP");
       });
   };
   return (
@@ -87,6 +86,7 @@ export default function Login() {
           <h1>
             <b>Verify OTP</b>
           </h1>
+          <p style={{ color: "red" }}>{fail}</p>
           <input
             className="authInput"
             id="otp"

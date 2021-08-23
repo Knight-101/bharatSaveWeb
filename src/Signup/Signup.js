@@ -83,7 +83,7 @@ export default function Signup() {
       })
       .catch(function (error) {
         console.error(error);
-        history.push("/");
+        setfail("Invalid OTP");
       });
   };
   return (
@@ -94,6 +94,7 @@ export default function Signup() {
           <h1>
             <b>Verify OTP</b>
           </h1>
+          <p style={{ color: "red" }}>{fail}</p>
           <input
             className="authInput"
             id="otp"
