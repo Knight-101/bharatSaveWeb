@@ -74,7 +74,9 @@ export default function Login() {
       })
       .catch(function (error) {
         console.error(error);
-        history.push("/");
+        if (error.code === "auth/invalid-verification-code") {
+          setfail("Invalid OTP");
+        }
       });
   };
   return (
