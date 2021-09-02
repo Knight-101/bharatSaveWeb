@@ -97,7 +97,7 @@ export default function Home() {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
-        if (res.data === "OK") {
+        if (res.data.OK) {
           alert("Buy successful");
           balanceDetails();
         } else {
